@@ -1,0 +1,92 @@
+How To Create Wing Skins
+------------------------
+
+To create a skin, create a background image and an INI file in the skins
+directory.  To test your skin view it in the skin chooser. The chooser
+will reload the ini file each time you select it in the chooser, making
+it easy to refesh.
+
+The Wing window will be as large as the bitmap you choose. Transparency
+is also supported so that you can have non-rectangular windows. The skin's
+INI file determines where the text and graph is positioned and what colors
+and fonts are used. You may choose different settings depending on whether
+the ping time is normal, a warning, or an error condition. These
+conditions depend on the value you use for the maximum graph setting.
+
+The INI file may contain the following sections.
+
+[General]
+	Contains general skin settings.
+	Notes
+		Notes about the skin displayed in the skin chooser.
+	Credits
+		Gives credit to the skin creator in the skin chooser.
+	ClearType
+		Can be 0 or -1; usually used to disable ClearType by setting it
+		to 0. Some skins look better with ClearType off.
+
+[Background]
+	Defines the background images. The Wing window will be as large as
+	the bitmap.
+	Bitmap
+		Bitmap filename. GIF, JPG, or BMP are recommended.
+	TransparentColor
+		The color of the bitmap used to represent transparency, in hex like
+		0xFF00FF. This allows you to create non-rectangular Wing windows
+		with transparent sections. Your bitmap needs to contain a totally
+		uniform color for the transparent areas.
+
+[RoundTripTime], [WarningRoundTripTime], [ErrorRoundTripTime]
+[Description], [WarningDescription], [ErrorDescription]
+	Defines how the ping time and description are displayed. Each section
+	represents a different condition based on how long the ping took to
+	respond.
+	Show
+		0 to hide display or 1 to show.
+	X
+		X position of the text. This is sensitive to Align.
+	Y
+		Y position of text. This is sensitive to Align.
+	Color
+		Font color in hex.
+	ShadowColor
+		Shadow color in hex or -1 to disable.
+	ReflectColor
+		Hilight color in hex or -1 to disable.
+	Font
+		Font name
+	Size
+		Font size in points.
+	Bold
+		1 for bold or 0 for normal.
+	Italic
+		1 for italic or 0 for normal.
+	Angle
+		Font angle in tenths of a degree. For example, 90 degress would be 900.
+	Align
+		Text alignment (left, center, right).
+
+[Graph]
+	Defines how the graph is drawn.
+	Show
+		1 to show or 0 to hide.
+	Left
+		Leftmost position.
+	Right
+		Rightmost position.
+	Top
+		Topmost position.
+	Bottom
+		Bottommost position.
+	Style
+		Graph style. Horizontal or vertical graphs supported.
+	ShadowColor
+		Shadow color in hex or -1 to disable shadow.
+	Color
+		Color for a normal ping time in hex.
+	WarningColor
+		Color for a warning ping time in hex.
+	ErrorColor
+		Color for a error ping time in hex.
+
+Good luck!

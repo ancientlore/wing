@@ -1,0 +1,410 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST ""res\\\\Wing.exe.manifest""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Wing.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 137, 183
+STYLE DS_SETFONT | WS_POPUP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "Copyright\n© 2004\nMichael Lore",IDC_STATIC,84,116,46,
+                    28,SS_NOPREFIX,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    PUSHBUTTON      "Web Site...",IDC_WEBSITE,84,162,46,14
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 228, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Monitor Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Host to ping:",IDC_STATIC,7,9,42,8
+    EDITTEXT        IDC_HOST,51,7,105,12,ES_AUTOHSCROLL
+    LTEXT           "Description:",IDC_STATIC,7,26,39,8
+    EDITTEXT        IDC_DESCRIPTION,51,24,105,12,ES_AUTOHSCROLL
+    LTEXT           "Maximum hops to measure:",IDC_STATIC,7,43,88,8
+    EDITTEXT        IDC_HOPS,97,41,59,12,ES_AUTOHSCROLL
+    LTEXT           "(default 32)",IDC_STATIC,159,43,62,8
+    LTEXT           "Update frequency:",IDC_STATIC,7,60,62,8
+    EDITTEXT        IDC_FREQUENCY,97,58,59,12,ES_AUTOHSCROLL
+    LTEXT           "(default 10000ms)",IDC_STATIC,159,60,62,8
+    LTEXT           "Graph maximum:",IDC_STATIC,7,77,54,8
+    EDITTEXT        IDC_GRAPH_MAX,97,76,59,12,ES_AUTOHSCROLL
+    LTEXT           "(default 250ms)",IDC_STATIC,159,77,62,8
+    DEFPUSHBUTTON   "OK",IDOK,171,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,24,50,14
+END
+
+IDD_SELECTSKIN DIALOGEX 0, 0, 250, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select a Skin"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Skin:",IDC_STATIC,7,7,54,8
+    LISTBOX         IDC_SKINLIST,7,16,90,73,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_CREDITS,7,93,90,29
+    LTEXT           "Sample:",IDC_STATIC,103,7,26,8
+    LTEXT           "",IDC_SKINSAMPLE,103,16,140,73
+    LTEXT           "",IDC_NOTES,103,93,140,8
+    DEFPUSHBUTTON   "OK",IDOK,140,108,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,193,108,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 130
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SELECTSKIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "A",            ID_ALWAYS_ON_TOP,       VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_LOCK_POSITION,       VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW_WINDOW,     VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_PROPERTIES,          VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "WTL Ping Application"
+            VALUE "CompanyName", "Michael D. Lore"
+            VALUE "FileDescription", "Wing Module"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Wing"
+            VALUE "LegalCopyright", "Copyright (C) 2004 Michael D. Lore"
+            VALUE "OriginalFilename", "Wing.exe"
+            VALUE "ProductName", "Wing Module"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CTXMENU MENU 
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "&Update Now",                 ID_MENU_UPDATENOW
+        MENUITEM "&Properties...\tCtrl+P",      32809
+        POPUP "&Recent"
+        BEGIN
+            MENUITEM "(empty)",                     ID_FILE_MRU_FILE1
+            , GRAYED
+        END
+        MENUITEM SEPARATOR
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Always On Top\tCtrl+A",      ID_ALWAYS_ON_TOP
+            MENUITEM "&Lock Position\tCtrl+L",      ID_LOCK_POSITION
+            MENUITEM SEPARATOR
+            MENUITEM "&Skin...",                    ID_SELECT_SKIN
+            POPUP "&Transparency"
+            BEGIN
+                MENUITEM "&Visible",                    ID_TRANS_VISIBLE
+                MENUITEM SEPARATOR
+                MENUITEM "10%",                         ID_TRANS_10
+                MENUITEM "20%",                         ID_TRANS_20
+                MENUITEM "30%",                         ID_TRANS_30
+                MENUITEM "40%",                         ID_TRANS_40
+                MENUITEM "50%",                         ID_TRANS_50
+                MENUITEM "60%",                         ID_TRANS_60
+                MENUITEM "70%",                         ID_TRANS_70
+                MENUITEM "80%",                         ID_TRANS_80
+                MENUITEM "90%",                         ID_TRANS_90
+            END
+            MENUITEM "Enable &ClearType",           32814
+            MENUITEM "&Opaque on Poor Response",    ID_VIEW_OPAQUEONPOORRESPONSE
+
+        END
+        POPUP "&Help"
+        BEGIN
+            MENUITEM "&About Wing...",              ID_APP_ABOUT
+            MENUITEM "Visit &Web Site",             ID_HELP_VISITWEBSITE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&New Window\tCtrl+N",         ID_FILE_NEW_WINDOW
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       57665
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ANGEL               BITMAP                  "res\\angel_wing.bmp"
+IDB_ABOUT               BITMAP                  "res\\wing_about.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Wing"
+    IDS_BADOPTIONS          "The options you specified are invalid. Please correct the information."
+    IDS_BADHOPS             "Maximum number of hops must be between %1!d! and %2!d!."
+    IDS_BADFREQ             "The update frequency must be between %1!d! and %2!d!."
+    IDS_ERROR_CAPTION       "Error"
+    IDS_BADGRAPHMAX         "The graph maximum must be between %1!d! and %2!d!."
+    IDS_BADHOST             "The host name cannot be longer than %1!d! characters."
+    IDS_BADDESC             "The description cannot be longer than %1!d! characters."
+    IDS_EMPTYHOST           "The host name cannot be empty."
+    IDS_BADDESCCHAR         "The description cannot contain a backslash and some other symbols."
+    IDS_TIMEOUT             "timeout"
+    IDS_RESOLVEHOST         "bad host"
+    IDS_NOTHINGTODO         "?"
+    IDS_PINGFMT             "%1!d!ms"
+    IDS_PINGEXCEEDED        "****ms"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout Wing..."
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW_WINDOW      "Open a new window\nNew Window"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TRANS_90             "Set transparency to 90%\n90%"
+    ID_LOCK_POSITION        "Prevent this window's location from being accidentally changed\nLock Position"
+    ID_ALWAYS_ON_TOP        "Keep this window on top\nAlways On Top"
+    ID_HELP_VISITWEBSITE    "Visit the Wing web site\nVisit Web Site"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CHOOSE_FONT          "Choose a text font\nFont..."
+    ID_SELECT_SKIN          "Choose a skin for this window\nSkin..."
+    ID_TRANS_VISIBLE        "Make the window opaque\nVisible"
+    ID_TRANS_10             "Set transparency to 10%\n10%"
+    ID_TRANS_20             "Set transparency to 20%\n20%"
+    ID_TRANS_30             "Set transparency to 30%\n30%"
+    ID_TRANS_40             "Set transparency to 40%\n40%"
+    ID_TRANS_50             "Set transparency to 50%\n50%"
+    ID_TRANS_60             "Set transparency to 60%\n60%"
+    ID_TRANS_70             "Set transparency to 70%\n70%"
+    ID_TRANS_80             "Set transparency to 80%\n80%"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "res\\Wing.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
