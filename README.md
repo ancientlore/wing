@@ -3,7 +3,7 @@ Wing
 
 Wing is a simple program that pings a server of your choice and reports the response time. Wing is skinnable and supports transparency, allowing your network monitor to be out of the way yet pleasing to look at.
 
-![Screenshot](blob/master/docs/screenshot.jpg)
+![Screenshot](https://github.com/ancientlore/blob/master/docs/screenshot.jpg)
 
 Wing is currently in beta.
 
